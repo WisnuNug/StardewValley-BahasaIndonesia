@@ -1,0 +1,479 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Aktifkan": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Merubah Tekstur pada menu utama, ui, dan tekstur lainya ke bahasa Indonesia.",
+			"Section": "Tampilan Bahasa Indonesia"
+		},
+		"Format Waktu 24jam": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Merubah mode waktu ke format 24 jam.",
+			"Section": "Tampilan Bahasa Indonesia"
+		},
+		"Item dan Barang": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama item dan barang ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Alat Kerajinan": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama alat hasil Kerajinan ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Furniture": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama furniture ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Celana": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama celana ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Topi": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama topi ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Senjata": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama senjata ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Sepatu": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama sepatu ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Baju": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama baju ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		},
+		"Nama Enchant": {
+			"AllowValues": "Iya, Tidak",
+			"Default": "Tidak",
+			"Description": "Merubah nama enchant pada senjata ke Bahasa Indonesia.",
+			"Section": "Nama Item Bahasa Indonesia"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "GameVersion",
+			"Value": "1.6.5"
+		},
+		{
+			"Name": "SupportedSystems",
+			"Value": "Windows, macOS, Linux, Steam Deck"
+		},
+		{
+			"Name": "recolor",
+			"Value": "Vanilla"
+		},
+		{
+			"Name": "recolor",
+			"Value": "Earthy",
+			"When": {
+				"HasMod": "DaisyNiko.EarthyRecolour"
+			}
+		},
+		{
+			"Name": "recolor",
+			"Value": "Vibrant",
+			"When": {
+				"HasMod": "grapeponta.VibrantPastoralRecolor"
+			}
+		},
+		{
+			"Name": "Interface",
+			"Value": "Vanilla"
+		},
+		{
+			"Name": "Interface",
+			"Value": "Earthy",
+			"When": {
+				"HasMod": "DaisyNiko.EarthyInterface"
+			}
+		},
+		{
+			"Name": "Interface",
+			"Value": "Flowery",
+			"When": {
+				"HasMod": "Maraluna.OvergrownFloweryInterface"
+			}
+		},
+		{
+			"Name": "Interface",
+			"Value": "Vintage2",
+			"When": {
+				"HasMod": "ManaKirel.VintageInterface2"
+			}
+		}
+	],
+	"Changes": [
+		{
+			"LogName": "Penambahan Bahasa Indonesia",
+			"Action": "EditData",
+			"Target": "Data/AdditionalLanguages",
+			"Entries": {
+				"wisnuNug.ModsBahasaIndonesia": {
+					"ID": "wisnuNug.ModsBahasaIndonesia",
+					"LanguageCode": "id",
+					"ButtonTexture": "Mods/wisnuNug.ModsBahasaIndonesia/Button",
+					"TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+					"ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+					"ClockDateFormat": "[DAY_OF_WEEK] [DAY_OF_MONTH]",
+					"UseLatinFont": true
+				}
+			}
+		},
+		{
+			"LogName": "Pilihan format waktu",
+			"Action": "EditData",
+			"Target": "Data/AdditionalLanguages",
+			"Fields": {
+				"wisnuNug.ModsBahasaIndonesia": {
+					"TimeFormat": "[HOURS_24]:[MINUTES]",
+					"ClockTimeFormat": "[HOURS_24]:[MINUTES]"
+				}
+			},
+			"When": {
+				"Format Waktu 24jam": true
+			}
+		},
+		{
+			"LogName": "Tombol Bahasa",
+			"Action": "Load",
+			"Target": "Mods/wisnuNug.ModsBahasaIndonesia/Button",
+			"FromFile": "assets/Minigames/{{Interface}}_Button.png"
+		},
+		{
+			"LogName": "Dialog Utama NPC",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Abigail, Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Emily, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Elliott, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gil, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leah, Characters/Dialogue/Leo, Characters/Dialogue/Lewis, Characters/Dialogue/LeoMainland, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/MarriageDialogue, Characters/Dialogue/MarriageDialogueAbigail, Characters/Dialogue/MarriageDialogueAlex, Characters/Dialogue/MarriageDialogueElliott, Characters/Dialogue/MarriageDialogueEmily, Characters/Dialogue/MarriageDialogueHaley, Characters/Dialogue/MarriageDialogueHarvey, Characters/Dialogue/MarriageDialogueKrobus, Characters/Dialogue/MarriageDialogueLeah, Characters/Dialogue/MarriageDialogueMaru, Characters/Dialogue/MarriageDialoguePenny, Characters/Dialogue/MarriageDialogueSam, Characters/Dialogue/MarriageDialogueSebastian, Characters/Dialogue/MarriageDialogueShane, Characters/Dialogue/Maru, Characters/Dialogue/Mister Qi, Characters/Dialogue/Pam, Characters/Dialogue/Penny, Characters/Dialogue/Pierre, Characters/Dialogue/rainy, Characters/Dialogue/Robin, Characters/Dialogue/Sam, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Strings",
+			"Action": "Load",
+			"Target": "Strings/1_6_Strings, Strings/MovieConcessions, Strings/MovieReactions, Strings/Movies, Strings/SimpleNonVillagerDialogues, Strings/StringsFromCSFiles, Strings/StringsFromMaps, Strings/UI, Strings/WorldMap, Strings/Characters, Strings/credits, Strings/BundleNames, Strings/Buildings, Strings/animationDescriptions, Strings/Locations, Strings/FarmAnimals, Strings/Events, Strings/SpecialOrderStrings, Strings/SpeechBubbles, Strings/Notes, Strings/Quests",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Teks Lain",
+			"Action": "Load",
+			"Target": "Strings/schedules/Abigail, Strings/schedules/Alex, Strings/schedules/Caroline, Strings/schedules/Clint, Strings/schedules/Demetrius, Strings/schedules/Elliott, Strings/schedules/Emily, Strings/schedules/Evelyn, Strings/schedules/George, Strings/schedules/Gus, Strings/schedules/Haley, Strings/schedules/Harvey, Strings/schedules/Jas, Strings/schedules/Jodi, Strings/schedules/Leah, Strings/schedules/Leo, Strings/schedules/Lewis, Strings/schedules/Linus, Strings/schedules/Marnie, Strings/schedules/Maru, Strings/schedules/Pam, Strings/schedules/Penny, Strings/schedules/Pierre, Strings/schedules/Robin, Strings/schedules/Sam, Strings/schedules/Sandy, Strings/schedules/Sebastian, Strings/schedules/Shane, Strings/schedules/Vincent, Strings/schedules/Willy",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game",
+			"Action": "Load",
+			"Target": "Data/Achievements, Data/EngagementDialogue, Data/ExtraDialogue, Data/mail, Data/Quests, Data/SecretNotes, Data/NPCGiftTastes",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Khusus",
+			"Action": "Load",
+			"Target": "Data/Bundles",
+			"FromFile": "assets/{{Target}}.json",
+			"Priority": "High",
+			"When": {
+				"Language": "id",
+				"HasFlag": "canReadJunimoText"
+			}
+		},
+		{
+			"LogName": "Event Data",
+			"Action": "Load",
+			"Target": "Data/Events/AbandonedJojaMart, Data/Events/AnimalShop, Data/Events/ArchaeologyHouse, Data/Events/Backwoods, Data/Events/BathHouse_Pool, Data/Events/Beach, Data/Events/BoatTunnel, Data/Events/BusStop, Data/Events/CommunityCenter, Data/Events/ElliottHouse, Data/Events/Farm, Data/Events/FarmHouse, Data/Events/FishShop, Data/Events/Forest, Data/Events/HaleyHouse, Data/Events/HarveyRoom, Data/Events/Hospital, Data/Events/IslandHut, Data/Events/IslandNorth, Data/Events/IslandSouth, Data/Events/IslandWest, Data/Events/JoshHouse, Data/Events/LeahHouse, Data/Events/ManorHouse, Data/Events/Mine, Data/Events/Mountain, Data/Events/QiNutRoom, Data/Events/Railroad, Data/Events/Saloon, Data/Events/SamHouse, Data/Events/SandyHouse, Data/Events/ScienceHouse, Data/Events/SebastianRoom, Data/Events/SeedShop, Data/Events/Sewer, Data/Events/Sunroom, Data/Events/Temp, Data/Events/Town, Data/Events/Trailer, Data/Events/Trailer_Big, Data/Events/WizardHouse, Data/Events/Woods",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Festival",
+			"Action": "Load",
+			"Target": "Data/Festivals/winter8, Data/Festivals/winter25, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data TV",
+			"Action": "Load",
+			"Target": "Data/TV/CookingChannel, Data/TV/TipChannel",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 1",
+			"Action": "Load",
+			"Target": " Strings/Objects",
+			"FromFile": "assets/{{Target}}_{{Item dan Barang}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 2",
+			"Action": "Load",
+			"Target": "Strings/Furniture",
+			"FromFile": "assets/{{Target}}_{{Furniture}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 3",
+			"Action": "Load",
+			"Target": "Strings/Pants",
+			"FromFile": "assets/{{Target}}_{{Celana}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 4",
+			"Action": "Load",
+			"Target": "Strings/BigCraftables",
+			"FromFile": "assets/{{Target}}_{{Alat Kerajinan}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 5",
+			"Action": "Load",
+			"Target": "Strings/Shirts",
+			"FromFile": "assets/{{Target}}_{{Baju}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 6",
+			"Action": "Load",
+			"Target": "Strings/Weapons",
+			"FromFile": "assets/{{Target}}_{{Senjata}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 7",
+			"Action": "Load",
+			"Target": "Strings/EnchantmentNames",
+			"FromFile": "assets/{{Target}}_{{Nama Enchant}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 8",
+			"Action": "Load",
+			"Target": "Data/hats",
+			"FromFile": "assets/{{Target}}_{{Topi}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan 9",
+			"Action": "Load",
+			"Target": "Data/Boots",
+			"FromFile": "assets/{{Target}}_{{Sepatu}}.json",
+			"When": {
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan item baru 1.6",
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Entries": {
+				"MagicQuiver_Name": "Tempat Tembakan Ajaib",
+				"RapidMagicQuiver": "Tempat Tembakan Ajaib Cepat",
+				"HeavyMagicQuiver": "Tempat Tembakan Ajaib Berat",
+				"PerfectMagicQuiver": "Tempat Tembakan Ajaib Sempurna",
+				"FrogEgg_Name": "Telur Katak",
+				"MagicHairDye_Name": "Gel Rambut Ajaib",
+				"FairyBox_Name": "Kotak Peri",
+				"ParrotEgg_Name": "Telur Burung Beo",
+				"IceRod_Name": "Pancingan Es",
+				"IridiumSpur_Name": "Iridium Spur",
+				"BasiliskPaw_Name": "Cakar Basilisk",
+				"PerfectIceRod": "Tongkat Es Sempurna",
+				"SeaJelly_Name": "Jeli Laut",
+				"RiverJelly_Name": "Jeli Sungai",
+				"CaveJelly_Name": "Jeli Gua",
+				"DriedFlowers_name": "{0} Kering",
+				"BroccoliFusilli_Name": "Fusilli Brokoli",
+				"PowdermelonSoda_Name": "Soda Melon Serbuk",
+				"PastaPrimavera_Name": "Pasta Primavera",
+				"ButterflyPowder_Name": "Serbuk Kupu-kupu",
+				"BlueGrassStarter_Name": "Penanaman Rumput Biru",
+				"MossSoup_Name": "Sup Lumut",
+				"Book_QueenOfSauce_Name": "Buku Masak Ratu Saus",
+				"Book_PriceCatalogue_Name": "Katalog Harga",
+				"Book_Marlon_Name": "Pemetaan Sistem Gua",
+				"Book_Speed_Name": "Jalan Angin Bagian 1",
+				"Book_Speed2_Name": "Jalan Angin Bagian 2",
+				"Book_Void_Name": "Buku Monster",
+				"Book_Friendship_Name": "Pertemanan 101",
+				"Book_Defense_Name": "Jack Menjadi Gesit, Jack Menjadi Tebal",
+				"Book_Woodcutting_Name": "Rahasia Woody",
+				"Book_WildSeeds_Name": "Jurnal Racun",
+				"Book_Roe_Name": "Permata Laut",
+				"Book_Bombs_Name": "Panduan Keselamatan Dwarvish",
+				"Book_Crabbing_Name": "Seni Mengutip Kepiting",
+				"Book_Trash_Name": "Pesta Makan Malam di Lorong",
+				"Book_Diamonds_Name": "Pemburu Berlian",
+				"Book_Mystery_Name": "Buku Misteri",
+				"Book_AnimalCatalogue_Name": "Katalog Hewan"
+			},
+			"When": {
+				"Item dan Barang": "Iya",
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan alat baru 1.6",
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Entries": {
+				"StatueOfTheDwarfKing_Name": "Patung Raja Kurcaci",
+				"StatueOfBlessings_Name": "Patung Berkat",
+				"Dehydrator_Name": "Dehidrator",
+				"TextSign_Name": "Tanda Teks",
+				"FishSmoker_Name": "Pengasap Ikan",
+				"MiniForge_Name": "Penempaan-Mini",
+				"Anvil_Name": "Landasan Tempaan",
+				"HeavyFurnace_Name": "Tungku Berat",
+				"BaitMaker_Name": "Pembuat Umpan",
+				"MushroomLog_Name": "Batang Jamur",
+				"GoldenAnimalCracker_Name": "Cracker Hewan Emas",
+				"GoldenMysteryBox_Name": "Kotak Misteri Emas",
+				"PanToolBaseName": "Cawan",
+				"DeluxeWormBin_Name": "Tempat Cacing Deluxe",
+				"BigChest_Name": "Peti Besar",
+				"Freezer_name": "Freezer",
+				"DeluxeMayoMachine_Name": "Mesin Mayones Deluxe",
+				"DeluxeCheesePress_Name": "Pemeras Keju Deluxe",
+				"DeluxeLoom_Name": "Alat Tenun Deluxe",
+				"Book_Riding_Name": "Buku: Berkuda",
+				"Book_Artifact_Name": "Panduan Penilaian Harta Karun",
+				"MannequinMale_Name": "Manekin (L)",
+				"MannequinFemale_Name": "Manekin (P)",
+				"CursedMannequinMale_Name": "Manekin Tersihir (L)",
+				"CursedMannequinDemale_Name": "Manekin Tersihir (P)"
+			},
+			"When": {
+				"Alat Kerajinan": "Iya",
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Data Game Pilihan Lainnya",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Object.cs.12726": "{0} Juice",
+				"Object.cs.12730": "{0} Wine",
+				"Object.cs.12735": "Pickled {0}",
+				"Object.cs.12739": "{0} Jelly",
+				"Object.cs.12750": "Wild Honey",
+				"Object.cs.12760": "{0} Honey",
+				"Object.cs.12772": "Membutuhkan 1 Coal",
+				"Object.cs.12777": "Membutuhkan 5 ores.",
+				"Object.cs.12783": "Membutuhkan 10 Wood",
+				"Object.cs.12787": "Membutuhkan 100 Slime"
+			},
+			"When": {
+				"Item dan Barang": "Tidak",
+				"Language": "id"
+			}
+		},
+		{
+			"LogName": "Quests Patch Indonesia",
+			"Action": "Include",
+			"FromFile": "assets/Data/QuestsID.json",
+			"When": {
+				"Language": "id",
+				"Item dan Barang": "Iya"
+			}
+		},
+		{
+			"LogName": "UI Teks",
+			"Action": "Include",
+			"FromFile": "Code/Cursors.json",
+			"When": {
+				"Language": "id",
+				"Aktifkan": true
+			}
+		},
+		{
+			"LogName": "Interior",
+			"Action": "Include",
+			"FromFile": "Code/Interior.json",
+			"When": {
+				"Language": "id",
+				"Aktifkan": true
+			}
+		},
+		{
+			"LogName": "outdoors dan maps",
+			"Action": "Include",
+			"FromFile": "Code/TileSheet.json",
+			"When": {
+				"Language": "id",
+				"Aktifkan": true
+			}
+		},
+		{
+			"LogName": "Tanggal",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Billboard",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"Language": "id",
+				"Aktifkan": true
+			}
+		}
+		//{
+		//	"LogName": "Android Future Patch",
+		//	"Action": "Include",
+		//	"FromFile": "Code/SDVAndroidPatch.json",
+		//	"When": {
+		//		"Language": "id",
+		//		"SupportedSystems |contains=Android": true
+		//	}
+		//}
+	]
+}

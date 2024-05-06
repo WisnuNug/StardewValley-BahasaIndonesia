@@ -1,0 +1,48 @@
+{
+	"Changes": [
+		{
+			"LogName": "Maps Kota",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Maps/{{recolor}}_{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "Maps Outdoor",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/Maps/{{recolor}}_{{TargetWithoutPath}}.png",
+			"ToArea": {
+				"X": 51,
+				"Y": 975,
+				"Width": 41,
+				"Height": 21
+			}
+		},
+		{
+			"LogName": "Maps Pantai",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_beach",
+			"FromFile": "assets/Maps/{{recolor}}_{{TargetWithoutPath}}.png",
+			"ToArea": {
+				"X": 42,
+				"Y": 426,
+				"Width": 29,
+				"Height": 14
+			},
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "Papan beli koin",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/Maps/{{recolor}}_DesertTiles.png",
+			"ToArea": {
+				"X": 34,
+				"Y": 176,
+				"Width": 141,
+				"Height": 16
+			}
+		}
+	]
+}

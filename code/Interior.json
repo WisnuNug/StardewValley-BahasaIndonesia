@@ -1,0 +1,160 @@
+{
+	"Changes": [
+		{
+			"LogName": "TownInterior 1",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/{{recolor}}_townInterior.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 30,
+				"Height": 5
+			},
+			"ToArea": {
+				"X": 369,
+				"Y": 504,
+				"Width": 30,
+				"Height": 5
+			}
+		},
+		{
+			"LogName": "TownInterior 2",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/{{recolor}}_townInterior.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 16,
+				"Width": 48,
+				"Height": 13
+			},
+			"ToArea": {
+				"X": 368,
+				"Y": 1042,
+				"Width": 48,
+				"Height": 13
+			}
+		},
+		{
+			"LogName": "TownInterior 3",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/{{recolor}}_townInterior.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 32,
+				"Width": 80,
+				"Height": 16
+			},
+			"ToArea": {
+				"X": 16,
+				"Y": 1008,
+				"Width": 80,
+				"Height": 16
+			}
+		},
+		{
+			"LogName": "TownInterior 4",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/{{recolor}}_townInterior.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 48,
+				"Width": 96,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 160,
+				"Y": 1024,
+				"Width": 96,
+				"Height": 32
+			}
+		},
+		{
+			"LogName": "TownInterior 5",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/{{recolor}}_townInterior.png",
+			"FromArea": {
+				"X": 96,
+				"Y": 0,
+				"Width": 32,
+				"Height": 80
+			},
+			"ToArea": {
+				"X": 192,
+				"Y": 944,
+				"Width": 32,
+				"Height": 80
+			}
+		},
+		{
+			"LogName": "Telur segar",
+			"Action": "EditImage",
+			"Target": "Maps/coopTiles",
+			"FromFile": "assets/Maps/{{recolor}}_coop.png",
+			"ToArea": {
+				"X": 2,
+				"Y": 306,
+				"Width": 57,
+				"Height": 13
+			}
+		},
+		{
+			"LogName": "Festival 1",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Maps/{{recolor}}_Festivals.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 22,
+				"Height": 10
+			},
+			"ToArea": {
+				"X": 186,
+				"Y": 67,
+				"Width": 22,
+				"Height": 10
+			}
+		},
+		{
+			"LogName": "Festival 2",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Maps/{{recolor}}_Festivals.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 10,
+				"Width": 28,
+				"Height": 7
+			},
+			"ToArea": {
+				"X": 482,
+				"Y": 246,
+				"Width": 28,
+				"Height": 7
+			}
+		},
+		{
+			"LogName": "Festival 3",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Maps/{{recolor}}_Festivals.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 17,
+				"Width": 32,
+				"Height": 9
+			},
+			"ToArea": {
+				"X": 433,
+				"Y": 230,
+				"Width": 32,
+				"Height": 9
+			}
+		}
+	]
+}

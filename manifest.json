@@ -1,0 +1,36 @@
+{
+	"Name": "Stardew Valley - Bahasa Indonesia",
+	"Author": "WisnuNug",
+	"Version": "1.6.5",
+	"Description": "Merubah Game konten, dialog, User Interface Ke bahasa indonesia.",
+	"UniqueID": "wisnuNug.ModsBahasaIndonesia",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": [
+		"Nexus:17369"
+	],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "DaisyNiko.EarthyRecolour",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DaisyNiko.EarthyInterface",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "grapeponta.VibrantPastoralRecolor",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Maraluna.OvergrownFloweryInterface",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false
+		}
+	]
+}

@@ -1,0 +1,216 @@
+{
+	"Changes": [
+		{
+			"LogName": "Kontrol",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 79,
+				"Height": 73
+			},
+			"ToArea": {
+				"X": 275,
+				"Y": 5,
+				"Width": 79,
+				"Height": 73
+			}
+		},
+		{
+			"LogName": "Tombol atur",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 80,
+				"Y": 0,
+				"Width": 21,
+				"Height": 11
+			},
+			"ToArea": {
+				"X": 294,
+				"Y": 428,
+				"Width": 21,
+				"Height": 11
+			}
+		},
+		{
+			"LogName": "Tombol Baru dan selesai",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 80,
+				"Y": 11,
+				"Width": 47,
+				"Height": 9
+			},
+			"ToArea": {
+				"X": 317,
+				"Y": 410,
+				"Width": 47,
+				"Height": 9
+			}
+		},
+		{
+			"LogName": "Tombol Taruhan",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 80,
+				"Y": 20,
+				"Width": 31,
+				"Height": 39
+			},
+			"ToArea": {
+				"X": 441,
+				"Y": 385,
+				"Width": 31,
+				"Height": 39
+			}
+		},
+		{
+			"LogName": "Text Sukses Joja",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 80,
+				"Width": 63,
+				"Height": 26
+			},
+			"ToArea": {
+				"X": 26,
+				"Y": 1364,
+				"Width": 63,
+				"Height": 26
+			}
+		},
+		{
+			"LogName": "Text bundel",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 134,
+				"Width": 110,
+				"Height": 11
+			},
+			"ToArea": {
+				"X": 128,
+				"Y": 1367,
+				"Width": 110,
+				"Height": 11
+			}
+		},
+		{
+			"LogName": "Text pas mancing",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 128,
+				"Y": 0,
+				"Width": 40,
+				"Height": 61
+			},
+			"ToArea": {
+				"X": 648,
+				"Y": 1334,
+				"Width": 40,
+				"Height": 61
+			}
+		},
+		{
+			"LogName": "Text minigame",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 96,
+				"Y": 64,
+				"Width": 80,
+				"Height": 48
+			},
+			"ToArea": {
+				"X": 352,
+				"Y": 1648,
+				"Width": 80,
+				"Height": 48
+			}
+		},
+		{
+			"LogName": "Text Tamat",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 64,
+				"Y": 80,
+				"Width": 21,
+				"Height": 19
+			},
+			"ToArea": {
+				"X": 244,
+				"Y": 1760,
+				"Width": 21,
+				"Height": 19
+			}
+		},
+		{
+			"LogName": "Topi",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 117,
+				"Width": 21,
+				"Height": 19
+			},
+			"ToArea": {
+				"X": 605,
+				"Y": 1965,
+				"Width": 21,
+				"Height": 19
+			}
+		},
+		{
+			"LogName": "Tombol Pairrie",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/{{Interface}}_Cursors.png",
+			"FromArea": {
+				"X": 32,
+				"Y": 121,
+				"Width": 89,
+				"Height": 7
+			},
+			"ToArea": {
+				"X": 152,
+				"Y": 1803,
+				"Width": 89,
+				"Height": 7
+			}
+		},
+		{
+			"LogName": "Logo Layar",
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/Minigames/{{Interface}}_TitleButtons.png",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "Crane Game",
+			"Action": "Load",
+			"Target": "LooseSprites/CraneGame, LooseSprites/JojaCDForm",
+			"FromFile": "assets/{{Target}}.png"
+		}
+	]
+}
